@@ -9,7 +9,12 @@
         <h1>Movies</h1>
         <ul>
             {% for movie in movies %}
-            <li>{{ movie.title }}</li>
+            <li>
+                <!-- We pass in the movie.id since the whole movie object is passed to this page we can access as we itterate-->
+                <a href={{movie.id}}>
+                    {{ movie.title }}
+                </a>
+            </li>
             {% endfor %}
         </ul>
     </body> 

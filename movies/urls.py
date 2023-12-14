@@ -23,7 +23,7 @@ urlpatterns = [
     path('', views.home),
     # 1. Below is the path for movies and it will hit the movies function inside of the view
     path('movies/', views.movies),
-    # when we visit movies / and pass in an id we will be redirected to views.detail page
+    # when we  visit movies / and pass in an id we will be redirected to views.detail page
     path('movies/<int:id>', views.detail)
 ]
  

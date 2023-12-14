@@ -13,9 +13,10 @@ def movies(request):
     # Takes in three arguments 
     return render(request, 'movies/movies.html', {'movies': data})
 
+# Returns the home view
 def home(request):
     return HttpResponse('Home page')
-
+ 
 # we pass 'id' as extra data to this view
 def detail(request, id):
     # We can ask for a certain primary key based on pk and id
