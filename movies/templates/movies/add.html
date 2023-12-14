@@ -1,0 +1,12 @@
+<!-- Form will have an action, this is where we want to send the form to 
+     Since we are adding we pass in the method as POST-->
+<form action="/movies/add" method="POST">
+    <!-- since we are adding data in the same page we need to add the csrf_token -->
+    {% csrf_token %}
+    <!-- Using placeholder instead of value (HTML5 functionality)   -->
+    <input type="text" name="title" id="title" placeholder="Movie title">
+    <input type="text" name="year" id="year" placeholder="Movie year">
+
+    <!-- We create an input (type submit which is a button) -->
+    <input type="submit" value="Add">
+</form>
